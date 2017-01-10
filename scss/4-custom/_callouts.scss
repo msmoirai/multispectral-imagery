@@ -1,0 +1,122 @@
+// Callout Feature
+//==================================================
+
+// -- Background Image --
+.callout-feature__background {
+  background-image: url(../images/wvu-pattern-background--gold--2.png);
+  background-color: $wvu-gold;
+  background-size: cover;
+}
+
+.callout-side-container__background {
+
+  background-color: #002855;
+  background-position: right;
+  background-size: cover;
+  color: #ffffff;
+}
+
+// -- Layout  --
+.wvu-container__callout-feature {
+  padding: 2rem 0 0 0;
+  @include mq($bp-small) {
+  	padding: 0 0 0 0;
+  }
+}
+.callout__feature-container {
+  @include outer-container;
+  @include mq($bp-medium) {
+      display: flex;
+      align-items: center;
+    } //mq
+  .callout__main-feature {
+  	margin-left: 1rem;
+  	margin-right: 1rem;
+  	padding-top: 1rem;
+  	p.wvu-lede-small {
+  	font-size: 1.2rem;
+  	line-height: 2.3rem;
+  	color: $black;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    @include mq($bp-small) {
+	padding-top: 1.5rem;
+    }
+    @include mq($bp-xlarge) {
+  	font-size: 1.3rem;
+  	line-height: 2.4rem;
+    }
+  }
+    @include mq($bp-small) {
+	padding: 0 6rem 0 0;
+  }
+    @include mq($bp-medium) {
+    	margin-left: 1rem;
+    	@include span-columns(7);
+    } //mq
+  } //callout__main-feature
+  .callout__side-container {
+
+
+    @include mq($bp-medium) {
+    	@include span-columns(4);
+      @include shift(1);
+    } //mq
+  } //callout__side-container
+  .callout__side-container-v2 {
+    @include mq($bp-medium) {
+      @include span-columns(4);
+      @include shift(1);
+    } //mq
+  } //callout__side-container
+}//callout__feature
+
+// -- Side Feature --
+.callout__side {
+  padding: 2rem 2rem;
+  h2 {
+  	font-size: 1.2rem;
+  	font-weight: 300;
+  	line-height: 2.1rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  h3 {
+  	color: white;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  p.wvu-lede-small {
+  	color: $black;
+    margin-bottom: 3rem;
+    @include mq($bp-small) {
+	padding: 0 6rem 0 0;
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.callout-container {
+  padding: 3rem 2rem;
+}
+
+.callout--wide {
+  width: 170px;
+  @include mq($bp-mini) {
+    width: 230px;
+  } //mq
+  @include mq($bp-medium) {
+    width: auto;
+  } //mq
+  @include mq($bp-xlarge) {
+    width: 230px;
+  } //mq
+} //.cost-aid__average-cost--wide
