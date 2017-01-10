@@ -1,0 +1,51 @@
+$wvu-masthead-background: 'blue';
+$has-small-photo: true;
+// Breakpoint Styles - Bourbon / Neat
+// http://thoughtbot.github.io/neat-docs/latest/#new-breakpoint
+//==================================================
+
+$bp-300: new-breakpoint(min-width 300px);
+
+$bp-400: new-breakpoint(min-width 400px);
+
+$bp-450: new-breakpoint(min-width 450px);
+
+$bp-500: new-breakpoint(min-width 500px);
+
+$bp-600: new-breakpoint(min-width 600px);
+
+$bp-700: new-breakpoint(min-width 700px);
+
+$bp-750: new-breakpoint(min-width 750px);
+
+$bp-900: new-breakpoint(min-width 900px);
+
+$bp-1000: new-breakpoint(min-width 1000px);
+
+$bp-1200: new-breakpoint(min-width 1200px);
+
+$bp-1560: new-breakpoint(min-width 1560px);
+
+$bp-1880: new-breakpoint(min-width 1880px);
+
+// Variables
+// -- These are the global variables that will be used throughout all styles.
+//==================================================
+
+// Base Unit
+$unit: 6px; // use the * to multiply the unit for the desired amount.
+
+// Grid Units
+$total-width: 100%;
+$max-width: 1560px;
+
+// Text Shadow
+$text-shadow-dark: rgba(0, 0, 0, 0.6) 1px 2px 1px;
+$text-shadow-light: rgba(255, 255, 255, 0.8) 2px 2px 1px;
+
+// Box Shadow
+$box-shadow-dark: rgba(0, 0, 0, 0.6) 1px 1px 1px;
+$box-shadow-light: rgba(255, 255, 255, 0.6) 1px 1px 1px;
+
+// Secondary Navigation
+$nav-secondary--open: #f5f0ea;
