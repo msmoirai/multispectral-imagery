@@ -4420,3 +4420,24 @@ input[type="submit"] {
     padding-top: 5rem;
   }
 }
+
+.callout__copy ul {
+  font-size: 1.2em;
+  line-height: 1.68333333em;
+  font-family: "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  margin-top: 0;
+  color: white;
+}
+
+.fonts-loaded .callout__copy ul {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+}
+
+.callout__copy ul a, .callout__copy ul a:visited {
+  color: white;
+  text-decoration: underline;
+}
+
+.callout__copy ul a:hover, .callout__copy ul a:active, .callout__copy ul a:visited:hover, .callout__copy ul a:visited:active {
+  text-decoration: none;
+}

@@ -43,4 +43,22 @@
       }
     }
   }
+
+
+
+
+
+  ul{
+    font-size: 1.2em;
+    line-height: 1.68333333em;
+    font-family: $helvetica-neue-font-stack;
+    .fonts-loaded & { font-family: $helvetica-neue-light; }
+    margin-top: 0;
+    color: white;
+    a, a:visited {
+      color: white;
+      text-decoration: underline;
+      &:hover, &:active { text-decoration: none; }
+    }
+  }
 }
