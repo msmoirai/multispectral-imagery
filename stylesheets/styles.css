@@ -4382,10 +4382,11 @@ input[type="submit"] {
 }
 
 .callout__copy p {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.68333333em;
   font-family: "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
   margin-top: 0;
+  padding-bottom: 1em;
   color: white;
 }
 
@@ -4413,31 +4414,10 @@ input[type="submit"] {
 @media (min-width: 48em) {
   .callout__copy p {
     margin: 0 auto;
-    font-size: 1.4em;
+    font-size: 1em;
     line-height: 1.8333333em;
   }
   .callout__copy p p:first-child {
     padding-top: 5rem;
   }
-}
-
-.callout__copy ul {
-  font-size: 1.2em;
-  line-height: 1.68333333em;
-  font-family: "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  margin-top: 0;
-  color: white;
-}
-
-.fonts-loaded .callout__copy ul {
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-}
-
-.callout__copy ul a, .callout__copy ul a:visited {
-  color: white;
-  text-decoration: underline;
-}
-
-.callout__copy ul a:hover, .callout__copy ul a:active, .callout__copy ul a:visited:hover, .callout__copy ul a:visited:active {
-  text-decoration: none;
 }

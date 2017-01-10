@@ -21,11 +21,12 @@
 
   }
   p{
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.68333333em;
     font-family: $helvetica-neue-font-stack;
     .fonts-loaded & { font-family: $helvetica-neue-light; }
     margin-top: 0;
+    padding-bottom: 1em;
     color: white;
     a, a:visited {
       color: white;
@@ -36,7 +37,7 @@
     &:last-child { padding-bottom: 1rem; }
     @include mq($bp-medium) {
       margin: 0 auto;
-      font-size: 1.4em;
+      font-size: 1em;
       line-height: 1.8333333em;
       p{
         &:first-child { padding-top: 5rem; }
@@ -48,17 +49,5 @@
 
 
 
-  ul{
-    font-size: 1.2em;
-    line-height: 1.68333333em;
-    font-family: $helvetica-neue-font-stack;
-    .fonts-loaded & { font-family: $helvetica-neue-light; }
-    margin-top: 0;
-    color: white;
-    a, a:visited {
-      color: white;
-      text-decoration: underline;
-      &:hover, &:active { text-decoration: none; }
-    }
-  }
+
 }
