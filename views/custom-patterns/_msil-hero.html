@@ -1,0 +1,24 @@
+<section class="msil-hero <r:var name="wvu-hero__classes" />">
+  <div class="msil-hero__container">
+    <div class="msil-hero__header">
+
+      <h1 class="wvu-shout wvu-shout--long-shout"><r:editable_region name="msil-hero__title-top" type="simple">Researching Human and</r:editable_region>
+      <span><r:editable_region name="msil-hero__title-bottom" type="simple">Machine Interactions</r:editable_region></span></h1>
+
+      <r:if_content_for region="msil-hero__lede">
+      <p><r:editable_region name="msil-hero__lede" type="simple">This is a lede to describe the action hero or help the user to action</r:editable_region></p>
+      </r:if_content_for>
+    </div>
+
+
+    <r:if_content_for region="msil-hero__button-url">
+      <a href="<r:page:content name="msil-hero__button-url" />" class="button"><r:editable_region name="msil-hero__button-text" type="simple">Button Text</r:editable_region></a>
+    </r:if_content_for>
+
+    <r:edit_mode_only>
+      <p>Add your button link</p>
+      <r:editable_region name="msil-hero__button-url"/>
+    </r:edit_mode_only>
+
+  </div>
+</section>

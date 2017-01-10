@@ -1,0 +1,84 @@
+.msil-hero {
+  @include pms-432-c-background;
+  background-position: 75% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+		&:before{
+		  content: '';
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  bottom: 0;
+		  left: 0;
+		  background: radial-gradient(50% 50%, transparent, black, black);
+		  opacity: 0.55;
+
+		}
+
+
+
+    p.wvu-lede{
+        font-size: 1rem;
+        color: white;
+        text-shadow: $text-shadow-dark;
+        line-height: 1.8rem;
+        @include mq($bp-medium) {
+          font-size: 2rem;
+          max-width: 38em;
+          line-height: 2.3rem;
+
+        }/*mq*/
+        @include mq($bp-xlarge) {
+            font-size: 2rem;
+        }/*mq*/
+    }/*h1*/
+}
+.msil-hero__container {
+	max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 3em 1em;
+
+  @include mq($bp-small) {
+    padding: 3em 1em;
+        }
+  @include mq($bp-medium) {
+    padding: 3em 1em;
+    }
+    @include mq($bp-large) {
+    padding: 7em 1em;
+    }
+    @include mq($bp-xlarge) {
+    padding: 7em 1em;
+    }
+}
+
+.msil-hero__header {
+
+  h1 {
+    @include wvu-shout;
+    font-size: 2rem;
+
+    span {
+      display: block;
+      color: $wvu-gold;
+    }
+    @include mq($bp-large) {
+			font-size: 4rem;
+
+		}/*mq*/
+  }
+  p {
+    font-size: 1.8rem;
+    max-width: 45rem;
+  }
+
+}
+
+.msil__text { margin-bottom: 3em; font-weight: bold;
+  @include mq($bp-medium) { max-width: 40%; }
+}

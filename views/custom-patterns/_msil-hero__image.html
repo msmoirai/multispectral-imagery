@@ -1,0 +1,18 @@
+<r:comment>This file will inline the background image for the
+hci-hero pattern by building out the css in an inline style tag
+to interact with CleanSlate and pull a labeled image
+http://cleanslatecms.wvu.edu/how-to/theme-development/random-image-file-or-blog-article
+</r:comment>
+
+<style>
+  .msil-hero { background-image: url(<r:files:each labels="hero-image" limit="1" types="image" random="true"><r:file:image_url size="1720x580" /></r:files:each>); }
+
+  .msil-hero::before {
+    content: '';
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+  }
+</style>
