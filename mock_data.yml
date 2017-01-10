@@ -6,6 +6,19 @@ shared_themes:
     "layouts/footer__icons--v2": "code"
 
 editable_region:
+  msil-hero__title-top:
+      "Title Top"
+
+  msil-hero__title-bottom:
+      "Title Bottom"
+
+  site-blurb: |
+      <p><%= Faker::Lorem.paragraph(7) %></p>
+
+  department-contact: |
+     <strong>Thirimachos Bourlai</strong>
+     <br> Assistant Professor
+    
 
   main: "This content comes from the mock_data.yml file in your project's root. Open the file to edit this content."
 
