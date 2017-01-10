@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+<r:partial name="custom-patterns/backpage-header" />
+
+<div class="wvu-container">
+
+  <main id="maincontent" class="main">
+    <h2><r:page:name /></h2>
+    <r:edit_mode_only><p>Add the publication or patent author(s)<r:page:name/></p></r:edit_mode_only>
+    <p><r:editable_region name="authors" /></p>
+    <r:edit_mode_only><p>Add additional information</p></r:edit_mode_only>
+    <p><r:editable_region name="events" /></p>
+
+    <r:edit_mode_only><p>The below buttons only display when you add a link, otherwise they wont show. <strong><em>Note:</em></strong> Remember that editing in firefox may cause editable regions to display since it sometimes will add non-breaking space html entities to blank editable regions.</p></r:edit_mode_only>
+
+    <r:page:if_has_content_for region="pdf" always_show_in_edit_mode="true">
+      <r:edit_mode_only><p>Add the PDF link</p>
+      <r:editable_region name="pdf" /></r:edit_mode_only>
+      <a class="button button--small" href="<r:page:content name="pdf"/>">PDF</a>
+    </r:page:if_has_content_for>
+
+
+    <r:page:if_has_content_for region="bibtex" always_show_in_edit_mode="true">
+      <r:edit_mode_only><p>Add the Bibtex link</p>
+      <r:editable_region name="bibtex" /></r:edit_mode_only>
+      <a class="button button--small" href="<r:page:content name="bibtex"/>">Bibtex</a>
+    </r:page:if_has_content_for>
+
+    <r:page:if_has_content_for region="code" always_show_in_edit_mode="true">
+      <r:edit_mode_only><p>Add the Code link</p>
+      <r:editable_region name="code" /></r:edit_mode_only>
+      <a class="button button--small" href="<r:page:content name="code"/>">Code</a>
+    </r:page:if_has_content_for>
+
+    <r:page:if_has_content_for region="implementation" always_show_in_edit_mode="true">
+      <r:edit_mode_only><p>Add the Theia's implementation link</p>
+      <r:editable_region name="implementation" /></r:edit_mode_only>
+      <a class="button button--small" href="<r:page:content name="code"/>">Theia's implementation</a>
+    </r:page:if_has_content_for>
+
+    <r:page:if_has_content_for region="video" always_show_in_edit_mode="true">
+      <r:edit_mode_only><p>Add the Video link</p>
+      <r:editable_region name="video" /></r:edit_mode_only>
+      <a class="button button--small" href="<r:page:content name="code"/>">Video</a>
+    </r:page:if_has_content_for>
+
+    <r:page:if_has_content_for region="website" always_show_in_edit_mode="true">
+      <r:edit_mode_only><p>Add the Website link</p>
+      <r:editable_region name="website" /></r:edit_mode_only>
+      <a class="button button--small" href="<r:page:content name="code"/>">Website</a>
+    </r:page:if_has_content_for>
+
+    <r:page:if_has_content_for region="documentation" always_show_in_edit_mode="true">
+      <r:edit_mode_only><p>Add the Documentation link</p>
+      <r:editable_region name="documentation" /></r:edit_mode_only>
+      <a class="button button--small" href="<r:page:content name="code"/>">Documentation</a>
+    </r:page:if_has_content_for>
+
+  </main><!-- /.main -->
+
+  <aside class="wvu-sidebar">
+    <div class="wvu-sub-nav">
+      <r:ancestor_menu start_depth="2" max_depth="3" ul_class="nav-secondary" active_class="nav-secondary--current-page" open_class="nav-secondary--open" />
+    </div> <!-- /.wvu-sub-nav -->
+  </aside>
+
+</div> <!-- /.wvu-container -->

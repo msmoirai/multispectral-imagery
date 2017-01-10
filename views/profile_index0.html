@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+<r:partial name="custom-patterns/landingpage-header" />
+
+<main class="wvu-section u-full-width">
+
+    <div class="wvu-container">
+      <h2>Faculty Researcher</h2>
+      <ul id="maincontent" class="profile__items">
+        <r:children:each labels="director">
+          <li>
+            <div class="profile">
+              <a href="<r:page:content name="profile-link" />">
+                <div>
+                  <r:page:content name="wvu-profile__photo" />
+                </div>
+                <div class="profile-highlight">
+                  <r:page:name />
+                </div>
+              </a>
+            </div>
+          </li>
+
+          </r:children:each>
+      </ul>
+
+    <h2>Student Researchers</h2>
+    <ul id="maincontent" class="profile__items__students">
+      <r:children:each labels="student">
+
+        <li>
+          <div class="profile__students">
+              <div>
+                <r:page:content name="wvu-profile__photo" />
+              </div>
+              <div class="profile-highlight__students">
+                <r:page:name />
+              </div>
+          </div>
+        </li>
+
+        </r:children:each>
+    </ul>
+    <h2>Alumni</h2>
+    <ul id="maincontent" class="profile__items__students">
+      <r:children:each labels="alumni">
+
+        <li>
+          <div class="profile__students">
+              <div>
+                <r:page:content name="wvu-profile__photo" />
+              </div>
+              <div class="profile-highlight__students">
+                <r:page:name />
+              </div>
+          </div>
+        </li>
+
+        </r:children:each>
+    </ul>
+    <h2>Past Visitors</h2>
+    <ul id="maincontent" class="profile__items__students">
+      <r:children:each labels="past">
+
+        <li>
+          <div class="profile__students">
+              <div>
+                <r:page:content name="wvu-profile__photo" />
+              </div>
+              <div class="profile-highlight__students">
+                <r:page:name />
+              </div>
+          </div>
+        </li>
+
+        </r:children:each>
+    </ul>
+</div>
+
+</main>
