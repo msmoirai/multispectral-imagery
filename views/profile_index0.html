@@ -12,7 +12,7 @@ layout: default
         <r:children:each labels="director">
           <li>
             <div class="profile">
-              <a href="<r:page:content name="profile-link" />">
+                <a href="<r:page:url />">
                 <div>
                   <r:page:content name="wvu-profile__photo" />
                 </div>
@@ -32,12 +32,14 @@ layout: default
 
         <li>
           <div class="profile__students">
+              <a href="<r:page:url />">
               <div>
                 <r:page:content name="wvu-profile__photo" />
               </div>
               <div class="profile-highlight__students">
                 <r:page:name />
               </div>
+            </a>
           </div>
         </li>
 
