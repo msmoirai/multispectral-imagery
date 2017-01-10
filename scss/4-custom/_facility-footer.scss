@@ -1,0 +1,29 @@
+.facility-footer {
+  @include mq($bp-medium) {
+  	margin-bottom: 3em;
+  }
+}
+.facility-contact {
+	margin-bottom:2em;
+  @include mq($bp-medium) {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 13px;
+    float: left;
+  }
+}
+.facility-department-contact {
+	margin-bottom:2em;
+  @include mq($bp-medium) {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 13px;
+    text-align: right;
+    float: right;
+    p {
+      max-width: 100%;
+    }
+  }
+}

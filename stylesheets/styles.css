@@ -4174,3 +4174,41 @@ input[type="submit"] {
     max-width: 100%;
   }
 }
+
+@media (min-width: 48em) {
+  .facility-footer {
+    margin-bottom: 3em;
+  }
+}
+
+.facility-contact {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 48em) {
+  .facility-contact {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 13px;
+    float: left;
+  }
+}
+
+.facility-department-contact {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 48em) {
+  .facility-department-contact {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 13px;
+    text-align: right;
+    float: right;
+  }
+  .facility-department-contact p {
+    max-width: 100%;
+  }
+}
