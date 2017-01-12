@@ -4022,9 +4022,14 @@ input[type="submit"] {
   padding: 0;
 }
 
+.press ul, .publications ul, .patents ul {
+  margin: 0px;
+}
+
 .press li, .publications li, .patents li {
   list-style: none;
   border-top: 1px solid #dbd7d4;
+  margin: 0px;
 }
 
 @media (min-width: 48em) {
@@ -4035,6 +4040,10 @@ input[type="submit"] {
 
 .press li:first-child, .publications li:first-child, .patents li:first-child {
   border-top: none;
+}
+
+.press h3, .publications h3, .patents h3 {
+  font-size: 1.25em;
 }
 
 .publications {
