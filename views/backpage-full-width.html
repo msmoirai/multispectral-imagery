@@ -2,18 +2,14 @@
 layout: default
 ---
 
-    <r:content_for name="custom-patterns/backpage-header">
-      <r:partial name="custom-patterns/hero-image" />
-    </r:content_for>
-
-<r:partial name="custom-patterns/back-page-header" />
+<r:partial name="custom-patterns/backpage-header" />
 
 <div class="wvu-container">
 
   <main id="maincontent" class="main full-width">
-    <h1><r:editable_region name="page-title" /></h1>
+    <h2><r:page:name /></h2>
     <r:editable_region name="main" />
   </main>
-</div> <!-- /.wvu-container -->
 
-<r:partial name="custom-patterns/small-action" />
+
+</div> <!-- /.wvu-container -->
