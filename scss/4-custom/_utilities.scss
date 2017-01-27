@@ -1,0 +1,268 @@
+// Utility classes
+//==================================================
+
+// -- Visually Hidden --
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+// Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+
+// --Omega Reset--
+// http://www.joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat/
+@mixin u-omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
+// Style list for "All Majors"
+.u-link-list, .u-link-list li, .u-link-list a, .u-link-list__item-description {
+  float: left;
+  width: 100%;
+  display: block;
+} //.u-link-list, &:li, &:a
+.u-link-list.u-link-list { // Specificity, gah!
+  padding-left: 0;
+  margin-left: 0;
+} //.u-link-list
+
+.u-link-list {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  li {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #f2f2f2;
+    ul {
+      display: block;
+      li{
+        display: list-item;
+        float: none;
+        width: 100%;
+        list-style: initial;
+        margin-bottom: 1rem;
+        } //.u-link-list li
+    } //.u-link-list ul
+    &:last-child{border-bottom: none;}
+    @include mq($bp-medium) {
+      @include span-columns(6);
+      @include omega(2n);
+      border-bottom: none;
+      margin-bottom: 2rem;
+    } //mq
+    @include mq($bp-xlarge) {
+      @include u-omega-reset(2n);
+      @include span-columns(4);
+      @include omega(3n);
+    } //mq
+  } //li
+  a {
+    font-size: 1.1em;
+    color: $wvu-blue;
+    text-decoration: none;
+    padding: 15px 5px;
+    transition: .1s all ease-in-out;
+    &:hover {
+      background-color: $wvu-gold;
+    } //&:hover
+    @include mq($bp-small) {
+      padding: 15px 35px;
+    } //mq
+  } //a
+} //.u-link-list
+
+.u-link-list__item-title, .u-link-list__item-description {
+  display: block;
+} //.u-link-list__item-title, .u-link-list__item-description
+
+.u-link-list__item-title {
+  margin-bottom: .3rem;
+  font-size: 1.8rem;
+  font-style: bold;
+} //.u-link-list__item-title
+
+.u-link-list__item-description {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 1rem;
+  padding-bottom: 10px;
+  @include mq($bp-medium) {
+    max-width: 38em;
+  } //mq
+} //.u-link-list__item-description
+
+.u-link-list--single-column {
+  li {
+    width: 100%;
+    .js & {
+      @include mq($bp-small) {
+        border-bottom: 0;
+      } //mq
+      &:nth-child(odd) {
+        @include mq($bp-small) {
+          background-color: #fffaeb;
+        } //mq
+      } //&:nth-child(odd)
+    } //.js &
+  } //li
+  a {
+    .js & {
+      @include mq($bp-small) {
+        padding: 35px;
+      } //mq
+      @include mq($bp-medium) {
+        padding: 55px 35px;
+      } //mq
+    } //.js &
+  } //a
+} //.u-link-list--single-column
+
+
+// --WVU Containers--  Overwriting the base WVU patterns containers padding to create better consistency --
+.wvu-container {
+  padding: 1rem 1.5rem 1.5rem;
+  @include mq($bp-medium) {
+    padding: 2.5rem 1.5rem 2rem;
+  }
+  @include mq($bp-xlarge) {
+    padding: 2.5rem 1rem 2rem;
+  }
+}
+.wvu-nav__container {
+  @include mq($bp-xlarge) {
+    padding: 0rem 1rem 0rem;
+  }
+}
+.wvu-masthead__container {
+  @include mq($bp-xlarge) {
+    padding: 0rem 1rem 0rem;
+  }
+}
+
+
+// -- Full Width Main Section --
+.full-width {
+  @include mq($bp-medium) { @include span-columns(12); }
+}
+// -- WVU Spotlight -- Overwriting padding spotlights
+.wvu-spotlight {
+  padding: 0;
+}
+
+
+// -- Figures and Captions, Data Tables
+// -- This is a little hacky, try and fix it at some point with a better solution
+figure{
+  margin: 1.5rem 0rem;
+  @include mq($bp-small) {
+    margin: 1.5rem 1rem;
+  }
+}
+
+th, td{
+  border: 1px solid #a6a6a6;
+  padding:0.5em;
+}
+.data{
+  font-size: 0.7em;
+  @include mq($bp-small) {
+    font-size: 1rem;
+  }
+}
+
+
+//-- 2 Col List --
+.u-dual-list.u-dual-list {
+  padding-left: 0;
+  margin-left: 0;
+} //.u-dual-list
+
+.u-dual-list {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  li {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #f2f2f2;
+    &:last-child{border-bottom: none;}
+    @include mq($bp-medium) {
+      @include span-columns(6);
+      @include omega(2n);
+      border-bottom: none;
+    } //mq
+    @include mq($bp-xlarge) {
+      @include u-omega-reset(1n);
+      @include span-columns(6);
+      @include omega(2n);
+    } //mq
+  } //li
+}//u-dual-list
+
+
+//-- 3 Col List
+.u-tri-list.u-tri-list { // Specificity, gah!
+  padding-left: 0;
+  margin-left: 0;
+} //.u-link-list
+
+.u-tri-list {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  li {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #f2f2f2;
+    ul {
+      display: block;
+      li{
+        display: list-item;
+        float: none;
+        width: 100%;
+        list-style: initial;
+        margin-bottom: 1rem;
+        } //.u-link-list li
+    } //.u-link-list ul
+    &:last-child{border-bottom: none;}
+    @include mq($bp-medium) {
+      @include span-columns(6);
+      @include omega(2n);
+      border-bottom: none;
+      margin-bottom: 2rem;
+    } //mq
+    @include mq($bp-xlarge) {
+      @include u-omega-reset(2n);
+      @include span-columns(4);
+      @include omega(3n);
+    } //mq
+  } //li
+}
+.list-indent
+{
+  margin-left: 0.5em;
+  li{margin-left: 0.5em}
+}
+a.wvu-masthead__link-gold{
+  color: $wvu-gold !important;
+  font-weight: bold;
+}
