@@ -36,9 +36,11 @@
 
 @mixin u-wvu-container-padding {
   padding: $wvu-container-padding;
+
   padding-left: 1em;
   padding-right: 1em;
   @include mq($bp-xlarge) {
+
     padding-left: 0;
     padding-right: 0;
   }
