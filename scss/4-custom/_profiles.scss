@@ -20,7 +20,7 @@
     &:last-child{border-bottom: none;}
     @include mq($bp-medium) {
       @include span-columns(6);
-      @include omega(2n);
+      @include omega(3n);
       padding-top: 0rem;
       border: none;
       margin-bottom: 2rem;
