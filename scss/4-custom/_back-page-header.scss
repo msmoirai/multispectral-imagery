@@ -1,0 +1,80 @@
+.back-page-header{
+	background-color: #002855;
+    background-position: 75% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+	h1{
+		font-size: 2rem;
+		color: white;
+		text-shadow: $text-shadow-dark;
+        text-transform: capitalize;
+        font-weight: bold;
+		margin-bottom: 0;
+		@include mq($bp-medium){
+            margin-top: 4rem;
+			font-size: 3rem;
+		}/*mq*/
+		@include mq($bp-xlarge){
+            margin-top: 4.5rem;
+			font-size: 3.5rem;
+		}/*mq*/
+	}/*h1*/
+    p{
+        font-size: 1rem;
+        color: white;
+        text-shadow: $text-shadow-dark;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        @include mq($bp-medium){
+            font-size: 1.5rem;
+        }/*mq*/
+        @include mq($bp-xlarge){
+            font-size: 2rem;
+        }/*mq*/
+    }/*p*/
+}
+.back-page-header__container {
+	max-width: 1560px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 2em 0 1.5em 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    @include mq($bp-medium){
+    	padding: 2em 0 .5em 0;
+    	padding-left: 1em;
+    	padding-right: 1em;
+    }
+    @include mq($bp-large){
+    	padding-left: 1em;
+    	padding-right: 1em;
+    }
+}
+.back-page-header__text { margin-bottom: 3em; font-weight: bold;
+  @include mq($bp-medium) { max-width: 40%; }
+}
+
+.back-page-header__breadcrumbs {
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    bottom: 15px;
+    width: auto;
+    @include mq($bp-medium){
+        font-size: 1.3rem;
+        font-weight: bold;
+        }
+  a {
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px #000;
+  } //a
+} //.back-page-header__breadcrumbs
+
+.wvu-breadcrumbs__crumbs {
+  padding-left: 0;
+} //.wvu-breadcrumbs__crumbs

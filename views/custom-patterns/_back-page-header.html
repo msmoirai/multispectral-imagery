@@ -1,0 +1,14 @@
+<style>
+    .back-page-header-background {
+	    background-image: url(<r:files:each labels="back-page-bg" limit="1" types="image" random="true"><r:file:image_url size="1720x580" /></r:files:each>);
+    } /* /.front-page-hero, .back-page-header */
+
+</style>
+
+
+<div class="back-page-header-background <r:var name="wvu-hero__classes" /> back-page-header <r:page:slug />">
+	<div class="back-page-header__container">
+  		<h1><r:editable_region name="back-page-header-name" scope="site" /></h1>
+		<r:partial name="custom-patterns/back-page-header-breadcrumbs" />
+	</div><!-- End Back Page Header Container -->
+</div><!-- End Back Page Header -->
