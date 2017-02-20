@@ -4124,7 +4124,9 @@ a.wvu-masthead__link-gold {
 }
 
 .back-page-header {
-  background-color: #002855;
+  color: white;
+  background-color: #333F48;
+  -webkit-font-smoothing: antialiased;
   background-position: 75% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4135,9 +4137,33 @@ a.wvu-masthead__link-gold {
   /*p*/
 }
 
+.back-page-header h1, .back-page-header h2, .back-page-header h3, .back-page-header h4, .back-page-header h5, .back-page-header h6, .back-page-header a {
+  color: white;
+}
+
+.back-page-header .button {
+  border-color: white;
+}
+
+.back-page-header a:hover {
+  color: #333F48;
+  background: white;
+}
+
+.back-page-header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(50% 50%, transparent, black, black);
+  opacity: 0.55;
+}
+
 .back-page-header h1 {
   font-size: 2rem;
-  color: white;
+  color: #EAAA00;
   text-shadow: rgba(0, 0, 0, 0.6) 1px 2px 1px;
   text-transform: capitalize;
   font-weight: bold;
