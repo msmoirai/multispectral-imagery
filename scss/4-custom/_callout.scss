@@ -5,8 +5,9 @@
   background-size: cover;
 }
 .callout__container{
+  @include outer-container();
   max-width: 68em;
-  
+
 }
 .callout__copy{
   width: 100%;
