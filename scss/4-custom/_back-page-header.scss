@@ -24,8 +24,7 @@
 
 			@include wvu-shout();
 			color: $wvu-gold;
-			text-shadow: $black 2px 2px;
-			position: relative;
+			
 			@include mq($bp-medium){
             margin-top: 4rem;
 			font-size: 3rem;
