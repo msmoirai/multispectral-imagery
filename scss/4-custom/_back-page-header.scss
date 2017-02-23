@@ -20,13 +20,13 @@
 		}
 
 	h1{
-		font-size: 2rem;
-		color: $wvu-gold;
-		text-shadow: $text-shadow-dark;
-        text-transform: capitalize;
-        font-weight: bold;
-		margin-bottom: 0;
-		@include mq($bp-medium){
+
+
+			@include wvu-shout();
+			color: $wvu-gold;
+			text-shadow: $black 2px 2px;
+			position: relative;
+			@include mq($bp-medium){
             margin-top: 4rem;
 			font-size: 3rem;
 		}/*mq*/

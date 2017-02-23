@@ -3925,7 +3925,7 @@ a.wvu-masthead__link-gold {
 }
 
 .msil-hero__container {
-  max-width: 1200px;
+  max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -4162,14 +4162,19 @@ a.wvu-masthead__link-gold {
 }
 
 .back-page-header h1 {
-  font-size: 2rem;
+  line-height: 0.80487em;
+  font-family: Impact, Charcoal, "Arial Black", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
   color: #EAAA00;
-  text-shadow: rgba(0, 0, 0, 0.6) 1px 2px 1px;
-  text-transform: capitalize;
-  font-weight: bold;
-  margin-bottom: 0;
+  text-shadow: #2C2A29 2px 2px;
+  position: relative;
   /*mq*/
   /*mq*/
+}
+
+.fonts-loaded .back-page-header h1 {
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
 }
 
 @media (min-width: 48em) {
@@ -4209,7 +4214,7 @@ a.wvu-masthead__link-gold {
 }
 
 .back-page-header__container {
-  max-width: 1560px;
+  max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -4354,6 +4359,7 @@ a.wvu-masthead__link-gold {
 }
 
 .callout__container {
+  max-width: 68em;
   max-width: 1560px;
   margin-left: auto;
   margin-right: auto;
