@@ -4372,18 +4372,9 @@ a.wvu-masthead__link-gold {
 .callout__copy {
   width: 100%;
   margin: 0;
-  padding: 3rem 1.5rem;
+  padding: 0 1rem;
   display: block;
   float: left;
-}
-
-@media (min-width: 48em) {
-  .callout__copy {
-    padding: 4rem;
-    border-radius: 3px;
-    margin: 3rem 0;
-    padding: 2rem 3rem;
-  }
 }
 
 .callout__copy p {
